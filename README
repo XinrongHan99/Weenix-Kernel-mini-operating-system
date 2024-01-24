@@ -17,24 +17,32 @@ Detailed documentation is maintained to elucidate the system design and operatio
 
 ## Getting Started
 
-### Download and install dependencies.
+### Download and Install Dependencies
 
-   On recent versions of Ubuntu or Debian, you can simply run:
+#### For Ubuntu or Debian:
+```bash
+sudo apt-get install git-core build-essential gcc gdb qemu genisoimage make python python-argparse cscope xterm bash grub xorriso
+```
 
-   $ sudo apt-get install git-core build-essential gcc gdb qemu genisoimage make python python-argparse cscope xterm bash grub xorriso
+#### For Redhat:
+```bash
+sudo yum install git-core gcc gdb qemu genisoimage make python python-argparse cscope xterm bash grub2-tools xorriso
+```
 
-   or on Redhat:
+### Compile Weenix
 
-   $ sudo yum install git-core gcc gdb qemu genisoimage make python python-argparse cscope xterm bash grub2-tools xorriso
+```bash
+make
+```
 
-### Compile Weenix:
+### Invoke Weenix
 
-   $ make
+Run Weenix normally:
+```bash
+./weenix -n
+```
 
-### Invoke Weenix:
-
-   $ ./weenix -n
-
-   or, to run Weenix under gdb, run:
-
-   $ ./weenix -n -d gdb
+Run Weenix under GDB:
+```bash
+./weenix -n -d gdb
+```
